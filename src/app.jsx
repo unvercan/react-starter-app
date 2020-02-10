@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import HelloWorld from './helloworld/helloworld.jsx';
+import Message from './message/message.jsx';
 
 class App extends Component {
   render() {
-    return <HelloWorld />;
+    return <Message />;
   }
 }
 
