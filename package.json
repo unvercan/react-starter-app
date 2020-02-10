@@ -1,21 +1,47 @@
 {
   "name": "react-app",
+  "description": "React App",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "reacj",
+    "eslint",
+    "webpack",
+    "prettier",
+    "babel",
+    "jsx"
+  ],
+  "author": {
+    "name": "Ünver Can Ünlü",
+    "url": "https://unvercanunlu.github.io/"
+  },
+  "contributors": [
+    {
+      "name": "Ünver Can Ünlü",
+      "url": "https://unvercanunlu.github.io/"
+    }
+  ],
+  "homepage": "https://github.com/unvercanunlu/react-app.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unvercanunlu/react-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unvercanunlu/react-app/issues"
+  },
+  "main": "index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --config 'config/webpack/webpack.config.dev.js'",
     "build": "./node_modules/.bin/webpack --config 'config/webpack/webpack.config.prod.js'",
-    "lint:check": "./node_modules/.bin/eslint '{src,test}/**/*.{js,jsx,json}' --config 'config/eslint.config.js'",
-    "lint:fix": "./node_modules/.bin/eslint '{src,test}/**/*.{js,jsx,json}' --fix  --config 'config/eslint.config.js'",
-    "format": "./node_modules/.bin/prettier --write '{src,test}/**/*.{js,jsx,json,css,html}' --config 'config/prettier.config.js'"
+    "lint:check": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --config '.eslintrc.js'",
+    "lint:fix": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --fix  --config '.eslintrc.js'",
+    "format:check": "./node_modules/.bin/prettier --check '{src,test,config}/**/*.{js,jsx,json,css,html}' --config 'prettier.config.js'",
+    "format:apply": "./node_modules/.bin/prettier --write '{src,test,config}/**/*.{js,jsx,json,css,html}' --config 'prettier.config.js'"
   },
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/unvercanunlu/react-app.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
