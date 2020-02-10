@@ -6,3 +6,6 @@
 
 # ide files
 /.idea
+
+# npm files
+/package-lock.json

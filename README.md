@@ -1,2 +1,2 @@
-# react-app
+# reactjs-app
 ReactJS App

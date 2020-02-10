@@ -43,7 +43,7 @@ const webpackCommonConfig = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'React App',
+      title: 'ReactJS App',
       favicon: path.resolve(__dirname, '../../src/favicon.ico'),
       template: path.resolve(__dirname, '../../src/index.html'),
       meta: {

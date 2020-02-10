@@ -1,6 +1,6 @@
 {
-  "name": "react-app",
-  "description": "React App",
+  "name": "reactjs-app",
+  "description": "ReactJS App",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -22,13 +22,13 @@
       "url": "https://unvercanunlu.github.io/"
     }
   ],
-  "homepage": "https://github.com/unvercanunlu/react-app.git#readme",
+  "homepage": "https://github.com/unvercanunlu/reactjs-app.git#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/unvercanunlu/react-app.git"
+    "url": "https://github.com/unvercanunlu/reactjs-app.git"
   },
   "bugs": {
-    "url": "https://github.com/unvercanunlu/react-app/issues"
+    "url": "https://github.com/unvercanunlu/reactjs-app/issues"
   },
   "main": "index.js",
   "scripts": {
