@@ -1,4 +1,7 @@
-const eslintConfig = {
+/* eslint-disable no-undef */
+
+const eslintrc = {
+  "root": true,
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -14,6 +17,9 @@ const eslintConfig = {
   rules: {
     semi: [1, "always"],
   },
+  ignorePatterns: [
+    "node_modules/"
+  ],
 };
 
-module.exports = eslintConfig;
+module.exports = eslintrc;

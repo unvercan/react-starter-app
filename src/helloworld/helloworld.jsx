@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import HelloWorldStyle from "./helloworld.css";
+import React, { Component } from 'react';
+import HelloWorldStyle from './helloworld.css';
 
 class HelloWorld extends Component {
   render() {
