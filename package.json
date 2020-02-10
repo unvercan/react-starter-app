@@ -32,8 +32,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --config 'config/webpack/webpack.config.dev.js'",
-    "build": "./node_modules/.bin/webpack --config 'config/webpack/webpack.config.prod.js'",
+    "dev": "./node_modules/.bin/webpack-dev-server --config 'config/webpack.config.dev.js'",
+    "build": "./node_modules/.bin/webpack --config 'config/webpack.config.prod.js'",
     "lint:check": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --config '.eslintrc.js'",
     "lint:fix": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --fix  --config '.eslintrc.js'",
     "format:check": "./node_modules/.bin/prettier --check '{src,test,config}/**/*.{js,jsx,json,css,html}' --config 'prettier.config.js'",

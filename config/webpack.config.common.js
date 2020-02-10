@@ -3,7 +3,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const babelConfig = require('../../babel.config');
+const babelConfig = require('../babel.config');
 
 const webpackCommonConfig = {
   entry: {
