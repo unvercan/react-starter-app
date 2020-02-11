@@ -3,7 +3,7 @@ import Message from './message/message.jsx';
 
 class App extends Component {
   render() {
-    return <Message />;
+    return <Message text="Welcome!" />;
   }
 }
 

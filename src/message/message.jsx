@@ -5,7 +5,6 @@ import MessageStyle from './message.css';
 class Message extends Component {
   constructor(props) {
     super(props);
-    this.props.text = 'Hello World!';
   }
 
   render() {
@@ -15,6 +14,10 @@ class Message extends Component {
 
 Message.propTypes = {
   text: PropTypes.string
+};
+
+Message.defaultProps = {
+  text: 'Hello World!'
 };
 
 export default Message;
