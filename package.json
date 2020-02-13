@@ -12,18 +12,14 @@
     "babel",
     "jsx",
     "editorconfig",
-    "jest"
+    "jest",
+    "bootstrap",
+    "jquery"
   ],
   "author": {
     "name": "Ünver Can Ünlü",
     "url": "https://unvercanunlu.github.io/"
   },
-  "contributors": [
-    {
-      "name": "Ünver Can Ünlü",
-      "url": "https://unvercanunlu.github.io/"
-    }
-  ],
   "homepage": "https://github.com/unvercanunlu/reactjs-app.git#readme",
   "repository": {
     "type": "git",
