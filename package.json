@@ -1,11 +1,11 @@
 {
-  "name": "reactjs-app",
-  "description": "ReactJS App",
+  "name": "react-starter-app",
+  "description": "React Starter App",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
   "keywords": [
-    "reactjs",
+    "react",
     "eslint",
     "webpack",
     "prettier",
@@ -20,13 +20,13 @@
     "name": "Ünver Can Ünlü",
     "url": "https://unvercanunlu.github.io/"
   },
-  "homepage": "https://github.com/unvercanunlu/reactjs-app.git#readme",
+  "homepage": "https://github.com/unvercanunlu/react-starter-app.git#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/unvercanunlu/reactjs-app.git"
+    "url": "https://github.com/unvercanunlu/react-starter-app.git"
   },
   "bugs": {
-    "url": "https://github.com/unvercanunlu/reactjs-app/issues"
+    "url": "https://github.com/unvercanunlu/react-starter-app/issues"
   },
   "main": "index.jsx",
   "scripts": {

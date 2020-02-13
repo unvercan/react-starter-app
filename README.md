@@ -1,2 +1,2 @@
-# reactjs-app
-- ReactJS App
+# react-starter-app
+- React Starter App

@@ -47,7 +47,7 @@ const webpackCommonConfig = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'ReactJS App',
+      title: 'React Starter App',
       filename: 'index.html',
       meta: {
         charset: { charset: 'utf-8' },
