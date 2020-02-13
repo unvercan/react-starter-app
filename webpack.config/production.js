@@ -3,8 +3,11 @@
 const webpackConfigMerge = require('webpack-merge');
 const webpackCommonConfig = require('./common');
 
-const webpackProdConfig = {
+const webpackProductionConfig = {
   mode: 'production'
 };
 
-module.exports = webpackConfigMerge(webpackCommonConfig, webpackProdConfig);
+module.exports = webpackConfigMerge(
+  webpackCommonConfig,
+  webpackProductionConfig
+);

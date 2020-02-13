@@ -32,17 +32,19 @@
   "bugs": {
     "url": "https://github.com/unvercanunlu/reactjs-app/issues"
   },
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --config 'webpack.config/dev.js'",
-    "build": "./node_modules/.bin/webpack --config 'webpack.config/prod.js'",
-    "lint:check": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --config '.eslintrc.js'",
-    "lint:fix": "./node_modules/.bin/eslint '{src,test,config}/**/*.{js,jsx,json}' --fix --config '.eslintrc.js'",
-    "format:check": "./node_modules/.bin/prettier --check '{src,test,config}/**/*.{js,jsx,json,css,html}' --config 'prettier.config.js'",
-    "format:apply": "./node_modules/.bin/prettier --write '{src,test,config}/**/*.{js,jsx,json,css,html}' --config 'prettier.config.js'",
-    "test": "./node_modules/.bin/jest"
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config/development.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config/production.js",
+    "lint:check": "./node_modules/.bin/eslint {src,test,config}/**/*.{js,jsx,json} --config .eslintrc.js",
+    "lint:fix": "./node_modules/.bin/eslint {src,test,config}/**/*.{js,jsx,json} --fix --config .eslintrc.js",
+    "format:check": "./node_modules/.bin/prettier --check {src,test,config}/**/*.{js,jsx,json,css,html} --config prettier.config.js",
+    "format:apply": "./node_modules/.bin/prettier --write {src,test,config}/**/*.{js,jsx,json,css,html} --config prettier.config.js",
+    "test": "./node_modules/.bin/jest --config jest.config.js"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
@@ -54,6 +56,7 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "csv-loader": "^3.0.2",
     "editorconfig": "^0.15.3",

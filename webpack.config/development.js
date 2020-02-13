@@ -4,7 +4,7 @@ const path = require('path');
 const webpackConfigMerge = require('webpack-merge');
 const webpackCommonConfig = require('./common');
 
-const webpackDevConfig = {
+const webpackDevelopmentConfig = {
   mode: 'development',
   devServer: {
     contentBase: path.resolve(__dirname, '../dist'),
@@ -16,4 +16,7 @@ const webpackDevConfig = {
   }
 };
 
-module.exports = webpackConfigMerge(webpackCommonConfig, webpackDevConfig);
+module.exports = webpackConfigMerge(
+  webpackCommonConfig,
+  webpackDevelopmentConfig
+);

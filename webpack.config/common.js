@@ -2,12 +2,13 @@
 
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const babelConfig = require('../babel.config');
 
 const webpackCommonConfig = {
   entry: {
-    app: './index.js'
+    app: './index.jsx'
   },
   module: {
     rules: [
@@ -47,12 +48,61 @@ const webpackCommonConfig = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'ReactJS App',
+      filename: 'index.html',
+      meta: {
+        charset: { charset: 'utf-8' },
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      },
       favicon: path.resolve(__dirname, '../src/favicon.ico'),
       template: path.resolve(__dirname, '../src/index.html'),
-      meta: {
-        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+      bootstrapCss: 'vendor/bootstrap/css/bootstrap.min.css',
+      bootstrapJs: 'vendor/bootstrap/css/bootstrap.min.css',
+      jquery: 'vendor/jquery/jquery.min.js'
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/bootstrap/css')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/bootstrap/dist/css/bootstrap.min.css.map'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/bootstrap/css')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/bootstrap/js')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/bootstrap/js')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/jquery/dist/jquery.min.js'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/jquery')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/jquery/dist/jquery.min.map'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/jquery')
       }
-    })
+    ])
   ],
   output: {
     filename: '[name].bundle.js',
