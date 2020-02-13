@@ -14,7 +14,8 @@
     "editorconfig",
     "jest",
     "bootstrap",
-    "jquery"
+    "jquery",
+    "fontawesome"
   ],
   "author": {
     "name": "Ünver Can Ünlü",
@@ -39,6 +40,7 @@
     "test": "./node_modules/.bin/jest --config jest.config.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "prop-types": "^15.7.2",

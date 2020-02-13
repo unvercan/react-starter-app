@@ -6,10 +6,21 @@
       rel="stylesheet"
       href="<%= htmlWebpackPlugin.options.bootstrapCss %>"
     />
+    <link
+      rel="stylesheet"
+      href="<%= htmlWebpackPlugin.options.fontAwesomeCss %>"
+    />
+    <script src="<%= htmlWebpackPlugin.options.fontAwesomeJs %>"></script>
   </head>
   <body>
     <div id="root"></div>
-    <script src="<%= htmlWebpackPlugin.options.jquery %>"></script>
-    <script src="<%= htmlWebpackPlugin.options.bootstrapJs %>"></script>
+    <script
+      type="text/javascript"
+      src="<%= htmlWebpackPlugin.options.jquery %>"
+    ></script>
+    <script
+      type="text/javascript"
+      src="<%= htmlWebpackPlugin.options.bootstrapJs %>"
+    ></script>
   </body>
 </html>

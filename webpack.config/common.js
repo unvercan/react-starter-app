@@ -57,7 +57,9 @@ const webpackCommonConfig = {
       template: path.resolve(__dirname, '../src/index.html'),
       bootstrapCss: 'vendor/bootstrap/css/bootstrap.min.css',
       bootstrapJs: 'vendor/bootstrap/css/bootstrap.min.css',
-      jquery: 'vendor/jquery/jquery.min.js'
+      jquery: 'vendor/jquery/jquery.min.js',
+      fontAwesomeCss: 'vendor/fontawesome/css/all.min.css',
+      fontAwesomeJs: 'vendor/fontawesome/js/all.min.js'
     }),
     new CopyWebpackPlugin([
       {
@@ -101,6 +103,20 @@ const webpackCommonConfig = {
           '../node_modules/jquery/dist/jquery.min.map'
         ),
         to: path.resolve(__dirname, '../dist/vendor/jquery')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/fontawesome/css')
+      },
+      {
+        from: path.resolve(
+          __dirname,
+          '../node_modules/@fortawesome/fontawesome-free/js/all.min.js'
+        ),
+        to: path.resolve(__dirname, '../dist/vendor/fontawesome/js')
       }
     ])
   ],
